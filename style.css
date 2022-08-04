@@ -63,6 +63,11 @@ section header {
     font-size: 16px;
     color: #f1eded;
     }
+/*Estilizando el logo de Argentina Programa*/
+section header img{
+    width: 20vh;
+    height: 15vh;
+}
 /*titulo de la cabecera */
 section header h3.menu-title{
     margin-left: 8px;
@@ -77,12 +82,16 @@ section.menu nav li{
    font-weight: 400;
 
 }
-/*Estilizando la seccion */
+/*Estilizando la seccion titulo */
 section .title{
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
+}
+section.title div.title-div{
+    align-items: center;
+    
 }
 /*Estilizando el titulo de la presentacion*/
 
@@ -108,9 +117,24 @@ section.title div.title-div div.title-container ul{
 }
 /*Estilizando la imagen de perfil*/
 section.title img.profile{
-    width: 20%;
+    border-radius: 100%;
+    width: 200px;
+    margin-left: 85px;
+    
 }
 
+.icon-red{
+    width: 30px;
+    height: 30px;
+}
+.skill-logo{
+    width: 100px;
+    height: 100px;
+}
+.edu-logo{
+    width: 120px;
+    height: 100px;
+}
 /*Estilizando la seccion Sobre Mi*/
 
 /*Estilizando el contenedor*/
@@ -264,7 +288,7 @@ section.formcontato{
     color: azure;
 }
 
-    section.formcontato div.esquerda img.contact-img{
+    section.formcontato div.izquierda img.contact-img{
         display: none;
     }
 
