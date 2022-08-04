@@ -1,0 +1,350 @@
+/*Estilizando el cuerpo del documento*/
+body {
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    width: 100vw;
+    
+}
+/*Estilizando las listas e items*/
+ol, ul,li {
+    list-style: none; /*sacando los estilos a los elementos*/
+}
+
+/*Estilizando los enlaces */
+a{
+    text-decoration: none; /*sacando la decoracion de los enlaces*/
+    color: black;/*asigno el color negro al hipervinculo*/
+}
+
+/*Estilizando las cajas de texto e inputs*/
+textarea:focus, input:focus, select:focus { /*cuando los enfoco*/
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+/*comenzando con la vista mobile*/
+/*aplicando estilos al contenedor de todo el cuerpo del documento*/
+.todo{
+    margin: 0 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+/*Aplicando estilos a la seccion de menu*/
+
+section.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    height: 10vh;
+    color: #f1eded;
+    background-color: black;
+}
+/*Enlaces en el menu*/
+section.menu a{
+    color:azure;
+}
+/*Elementos de la cabecera*/
+section header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 16px;
+    color: #f1eded;
+    }
+/*titulo de la cabecera */
+section header h3.menu-title{
+    margin-left: 8px;
+}
+/*lista de links de secciones*/
+section.menu nav ul.menu-list{
+   display: none;/*ocultar en la vista mobile */
+}
+/*item de la lista del menu*/
+section.menu nav li{
+   font-size: 14px;
+   font-weight: 400;
+
+}
+/*Estilizando la seccion */
+section .title{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+/*Estilizando el titulo de la presentacion*/
+
+section.title div.title-div div.title-container h2{ 
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+}
+/*Estilizando el subtitulo de la presentacion*/
+section.title div.title-div div.title-container h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+/*Estilizando la lista de enlaces a redes*/
+section.title div.title-div div.title-container ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    font-size: 14px;
+}
+/*Estilizando la imagen de perfil*/
+section.title img.profile{
+    width: 20%;
+}
+
+/*Estilizando la seccion Sobre Mi*/
+
+/*Estilizando el contenedor*/
+section.about{
+    color: azure;
+    background-color: #000000;
+}
+
+/*Estilizando el parrafo de descripcion*/
+section.about div.about-container p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+/*Estilizando el contenedor de la seccion de Skill*/
+
+section.skills div.skills-line{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: space-between;
+}
+/*Estilizando la card de Skills*/
+
+section.skills div.skills-line div.skills-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    background-color: #fbfbfb;
+    margin: 22px 0 22px 0;
+    width: 156px;
+    height: 118px;
+}
+/*Estilizando la lista que contiene el nombre e imagen de los skills */
+
+section.skills div.skills-line div.skills-box ul{
+    margin: 0;
+    padding: 0;
+
+}
+
+/*Estilizando la seccion formacion academica*/
+
+section.academic{
+    background-color: #080808;
+    color: azure;
+}
+/*Estilizando el contenedor de experiencias*/
+    section.academic div.courses{
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+/*Estizando la lista que contiene los datos de las instituciones*/
+    section.academic div.courses ul{
+        
+        margin: 0;
+        padding: 0;
+
+    }
+/*Estilizando los items de las listas que contienen informacion*/
+    section.academic div.courses ul li{
+        padding: 0;
+        margin: 32px;
+    }
+/*Dandole un margen a la imagen de la card 1*/
+    section.academic div.courses ul li img:nth-child(1) {
+        margin-top: 18px;
+
+    }
+/*Dando un margen a las imagenes de cada card*/
+    section.academic div.courses ul li.course-img{
+        background-color: white;
+    }
+/*Estilizando los titulos de las instituciones*/
+    section.academic div.courses ul li.course-title h4,h5{
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: -25px;
+        text-align: start;
+    }
+/*Estilizando los Subtitulos de las intituciones*/
+    section.academic div.courses ul li.course-subtitle{
+        font-weight: 500;
+        font-size: 14px;
+        text-align: start;
+    }
+
+/* Estilizando la seccion de experiencia laboral*/
+/*Estilizando el contenedor de todas las experiencias*/
+section.experience{
+    margin-top: 13px;
+}
+/*Estilizando la card de experiencia*/
+    section.experience div.experiencia-box{
+        margin: 0 32px 64px 32px;
+    }
+/*Dandole un margen a la imagen de la experiencia*/
+    section.experience div.experiencia-box img{
+        margin-bottom: 16px ;
+    }
+/*dandole un tamaño y anchura al titulo de experiencia*/
+    section.experience div.experiencia-box h2{
+        font-weight: 700;
+        font-size: 16px;
+    }
+/*dandole un tamaño y anchura al Subtitulo de experiencia*/
+    section.experience div.experiencia-box h3{
+        font-weight: 500;
+        font-size: 14px;
+    }
+/*Dandole una disposicion flexible a la caja contenedora de botones*/
+    section.experience div.experiencia-box div.experience-description{
+        display: flex;
+    }
+/*Estilizando el boton de repositorio*/
+    section.experience div.experiencia-box span.experience-repo button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 16px;
+        border: 1px solid #000000;
+        color: #000000;
+        box-sizing: border-box;
+    }
+/*Estilizando el boton de Demostracion*/
+    section.experience div.experiencia-box span.experiencia-demo button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 16px;
+        margin-left: 16px;
+        border: 1px solid #000000;
+        background: #000000;
+        color: white;
+    }
+/*Dandole un ancho a la imagen de muestra del proyecto de experiencia*/
+    section.experience img{
+        width: 100%;
+    }
+
+/*Seccion de Contacto */
+
+section.formcontato{
+    background-color: #000000;
+    padding: 16px;
+    color: azure;
+}
+
+    section.formcontato div.esquerda img.contact-img{
+        display: none;
+    }
+
+    section.formcontato div.contact div.contact-text h3.contact-subtext{
+        font-weight: 500;
+        font-size: 16px;
+        padding: 10px;
+        margin: 0;
+    }
+
+    section.formcontato div.contact div.contact-text h2.contact-title{
+        font-weight: 700;
+        font-size: 22px;
+        padding: 10px;
+       
+    }
+
+    section.formcontato form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        margin: 0;
+    }
+    section.formcontato form input{
+        border: transparent;
+        flex-grow: 1;
+        margin: 10px 0px;
+        height: 56px;
+        width: 80vw;
+    }
+    form input::placeholder {
+         color:#464646; 
+         font-family: 'Raleway';
+    }
+    
+    section.formcontato form input:focus{
+        border-bottom: solid 2px #ffffff;
+    }
+    section.formcontato form textarea{
+        border: transparent;
+        flex-grow: 1;
+        margin: 10px 0px;
+        height: 96px;
+        width: 80vw;
+    }
+
+    section.formcontato form textarea:focus{
+        border-bottom: solid 2px #ffffff;
+    }
+
+    textarea::placeholder { 
+        color:#464646;
+        font-family: 'Raleway'
+    }
+
+
+    form.form button{
+        border: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 16px;
+        background-color:#ffffff; 
+        color: rgb(0, 0, 0);
+        margin: 32px 0;
+    }
+
+    /*Seccion de pie de pagina*/
+
+section.footer{
+    height: 10vh;
+    background-color: white;
+}
+
+section.footer div.rodapie{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    
+}
