@@ -1,0 +1,75 @@
+html{
+    background-color: #f5f5f5;
+    font-family: "Raleway";
+}
+/*al contenedor general*/
+.container {
+    margin: auto;/*un margen automatico en todos los lados*/
+    display: flex;/*display flex*/
+    flex-direction: column;/*situamos los elementos en columnas*/
+    align-items: center;/*los alineamos en el eje y al centro*/
+    justify-content: center;/*los alineamos en el eje x al centro*/
+    gap: 30px;/*un espaciado entre ellos ed 30px*/
+    width: 450px;/*un ancho del contenedor de 450px*/
+}
+
+/*elemento de formulario*/
+form {
+    display: flex;/*disposicion flexible*/
+    flex-direction: column;/*encolumnar los elementos*/
+    align-items: stretch;
+    gap: 30px;/*espaciado entre elementos*/
+}
+/*contenedor de inputs*/
+label {
+    display: flex;/*disposicion flexible*/
+    flex-direction: column;/*que tenga direccion de tipo columna*/
+    gap: 5px;/*espaciado de elementos de 5px*/
+}
+/*texto dentro del label*/
+label span {
+    font-weight: 700;/*anchura del texto*/
+}
+/*input de email y pass*/
+label input {
+    width: 90%;
+    background-color: #f5f5f5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+    transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+    border: solid 1px #000000;
+}
+/*accion cuando paso sobre el input*/
+label input:hover {
+    background-color: #000000;
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #0000004f;
+}
+/*accion cuando enfoco en el input*/
+label input:focus {
+    background-color: #000000;
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #0707074f;
+}
+/*boton de inicio de sesion*/
+.submit-btn{
+        
+        margin: auto;
+        font-weight: 500;
+        font-size: 14pt;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        border: 1px solid #000000;
+        background: #000000;
+        color: white;
+    }
+/*accion cuando me situo sobre el boton*/
+    .submit-btn:hover {
+         opacity: 0.75;
+    }
