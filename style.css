@@ -370,5 +370,73 @@ section.footer div.rodapie{
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    
 }
+
+/*Aplicando la vista de tablets*/
+@media (min-width: 700px) {
+
+    .tudo{
+        margin: 32px 32px;
+    }
+
+/*Seccion title contenedor*/
+    section.title{
+        margin-bottom: 32px;
+    }
+/*contenedor interior de title*/
+    div.title-div{
+        justify-content: space-around;
+        align-content: flex-start;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+/*contenedor de informacion*/
+    div.title-container{
+        width: 524px;
+       
+    }
+/*imagen de perfil*/
+    section.title img.profile {
+        width: 157px;
+        margin-left: 32px;
+    }
+    /*Seccion de skills*/
+
+    section.skills div.skills-line{
+        width: 100%;
+        
+    }
+    section.skills div.skills-line div.skills-box {
+        margin: 22px 12px 10px 0px;
+        width: 180px;
+        height: 118px;
+    }
+
+
+/*Seccion de formacion academicas*/
+
+    section.academic div.courses{
+        display: flex;
+        justify-content: space-around;
+    }
+    section.academic div.courses-box{ 
+      width: 18rem;
+    }
+    section.academic div.courses ul li.course-img img{
+        width: 50%;
+    }
+
+/*Seccion de experiencia profesional contenedor*/
+
+    section.experience div.experiencia-box {
+        display: flex;
+        flex-direction: column;
+    }
+/*imagen del proyecto*/
+    section.experience div.experiencia-box img {
+        width: 100%;
+    }
+
+}
+
+
