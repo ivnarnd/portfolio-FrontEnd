@@ -439,4 +439,171 @@ section.footer div.rodapie{
 
 }
 
+/*ancho de mas de 1000px*/
+@media (min-width: 1000px) {
+
+    /*Seccion principal contenedor*/
+    
+        .section-title {
+            font-size: 32px;
+        }
+    
+    /*Seccion Menu*/
+    /*Contenedor de items menu*/
+        section.menu nav ul.menu-list {
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            width: 600px;
+        }
+
+        
+         /*titulo de la seccion de title*/
+        section.title div.title-div div.title-container h2 {
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 50px;
+        }
+    
+       /*contenedor de los detalles de title*/
+        div.title-container{
+            width: 751px;
+           
+        }
+        /*imagen de perfil*/
+        section.title img.profile {
+            width: 368px;
+           
+        }
+        /*contenedor de los links a las redes sociales*/
+        section.title div.title-div div.title-container ul {
+            display: flex;
+            margin-left: -65px;
+            align-items: center;
+            padding: 0px;
+            font-size: 16px;
+        }
+        
+        section.title div.title-div div.title-container h3 {
+            font-size: 17px;
+            line-height: 23px;
+        }
+    
+    /*Seccion  Acerca de mi*/
+    
+        section.about{
+            padding: 62px 50px;
+        }
+        div.about-container{
+            
+            height: 255px;
+        }
+    
+    /*Skills*/
+    
+        section.skills div.skills-line{
+            width: 100%;
+            
+        }
+        section.skills div.skills-line div.skills-box {
+            margin: 22px 15px 22px 0px;
+            width: 108px;
+            height: 118px;
+        }
+    
+    /*Hobbies*/
+    
+        section.hobbies-section div.hobbies-line{
+            width: 100%;
+        }
+    
+        section.hobbies-section div.hobbies-line div.hobbies-box {
+            margin: 22px 15px 22px 0px;
+            width: 108px;
+            height: 108px;
+            }
+     
+    /*Formacion Academica*/
+    
+        section.academic div.courses-box{ 
+            width: 380px;
+            
+        }
+        section.academic div.courses ul li.course-img img{
+            width: 70%;
+        }
+        section.academic div.courses ul li.course-img{
+           padding: 30px 30px;
+        }
+    
+        section.academic {
+            margin-top: 82px;
+        }
+    
+    /*seccion de experiencia profesional*/
+    
+        section.experience div.experiencia-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    
+        section.experience div.experiencia-box:nth-child(2) {
+            margin-top: 50px;
+           }
+    
+        section.experience div.experiencia-box:nth-child(3) {
+        flex-direction: row-reverse;
+       }
+       section.experience div.experiencia-box:nth-child(5) {
+        flex-direction: row-reverse;
+       }
+    
+        section.experience div.info-container{
+            margin: 0 5%;
+        }
+    
+        section.experience div.experiencia-box img {
+            width: 50%;
+        }
+    
+     /*Contacto*/
+    
+        section.formcontato div.contact {
+            display: flex;
+            justify-content: center;
+        }
+    
+        section.formcontato div.contact-text {
+            display: flex;
+            flex-direction: column;
+            margin-left: 2%;
+            margin-top: -2%;
+        }
+    
+        section.formcontato div.izquierda img.contact-img{
+            display: block;
+            width: 464px;
+            height: 570px;
+        }
+    
+        section.formcontato form input{
+            width: 100%;
+        }
+    
+        section.formcontato form textarea{
+            width: 100%;
+        }
+    
+    /*Footer*/
+    
+        section.footer div.rodapie{
+            line-height: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            padding: 1%;
+        }
+    }
+
 
